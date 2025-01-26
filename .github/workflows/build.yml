@@ -38,7 +38,7 @@ jobs:
     needs: ['build']
 
     steps:
-      - uses: geode-catgirls/build-geode-mod/combine@main
+      - uses: geode-catgirls/build-geode-mod/ios-cli-setup@main
         id: build
 
       - uses: actions/upload-artifact@v4
