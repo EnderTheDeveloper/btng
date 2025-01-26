@@ -18,7 +18,7 @@ class $modify(MyMenuLayer, MenuLayer) {
 		);
 
 		auto menu = this->getChildByID("bottom-menu");
-		auto geodebtn = menu->getChildByID("geode.loader/geode-button")
+		auto geodebtn = menu->getChildByID("geode.loader/geode-button");
 		geodebtn->setVisible(true);
 		menu->addChild(myButton);
 
