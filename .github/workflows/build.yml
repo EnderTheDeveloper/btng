@@ -23,14 +23,12 @@ jobs:
     name: ${{ matrix.config.name }}
     runs-on: ${{ matrix.config.os }}
 
-    steps:
-      - uses: actions/checkout@v4
+ 
+    - uses: actions/checkout@v4
 
-      - name: Build the mod
-        uses: geode-catgirls/build-geode-mod@main
-        with:
-          combine: false
-          target: ${{ matrix.config.target }}
+    - name: Build the mod
+      uses: geode-catgirls/build-geode-mod@main
+
 
   package:
     name: Package builds
