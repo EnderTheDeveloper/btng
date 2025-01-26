@@ -18,6 +18,8 @@ class $modify(MyMenuLayer, MenuLayer) {
 		);
 
 		auto menu = this->getChildByID("bottom-menu");
+		auto geodebtn = menu->getChildByID("geode.loader/geode-button")
+		geodebtn->setVisible(true);
 		menu->addChild(myButton);
 
 		myButton->setID("my-button"_spr);
@@ -28,6 +30,6 @@ class $modify(MyMenuLayer, MenuLayer) {
 	}
 
 	void onMyButton(CCObject*) {
-		FLAlertLayer::create("Geode", "Hello from my custom mod!", "OK")->show();
+		FLAlertLayer::create("Geode", "it works!!!!", "OK")->show();
 	}
 }; 
